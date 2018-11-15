@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <title>Search Countries</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="logo" role="header">
+        <img src="UI/assets/logo.svg" role="presentation" alt="SEARCH PAGE">
+    </div>
+
+    <br>
+    <div class='search-bar' role="searchBar">
+        <label>
+            <input autocomplete="false" aria-haspopup="false" onchange="return HandleEnterEvent()" onkeydown="return HandleEnterEvent(event)" aria-placeholder="Write Country Name then press Enter" id="searchInput" name="CountryName"
+                placeholder="Write Country Name then press Enter" list="countriesDataList">
+        </label>
+        <datalist id="countriesDataList"></datalist>
+    </div>
+    <!--history grid-->
+    <div id="historyResultsGrid" role="HistoryGrid">
+    </div>
+</body>
+<script src="core.js"></script>
+
+</html>
